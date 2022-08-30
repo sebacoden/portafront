@@ -1,0 +1,14 @@
+<div class="title">Idiomas
+    <button
+        type="butoon"
+        routerLink='/nuevaidioma'
+    >Nueva</button>
+</div>
+<ul *ngFor="let perfil of perfiles" style="list-style-type: none">
+    <li>
+        {{perfil.idioma}}
+        <button class="btn" (click)="onDeleteidioma(perfil.id)" >X</button>
+        <button class="" routerLink="/editeidioma/{{perfil.id}}" >Editar</button>
+    
+    </li>
+</ul>

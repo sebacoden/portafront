@@ -1,0 +1,16 @@
+<div class="container" >
+    <div class="row">
+        <div>
+            <form (ngSumbit) = "onUpdate()" novalidate #anda="ngForm">      
+                <div>
+                    <label for="formacion">Edite Formacion</label>
+                    <input type="text"  id="formacion" name="formacion" class="form-control" [(ngModel)]="expLab">
+                </div>
+               <!-- --> 
+               <input type="submit" value="confirmar" (click)="onUpdate()">
+               
+            </form>
+
+        </div>
+    </div>
+</div>

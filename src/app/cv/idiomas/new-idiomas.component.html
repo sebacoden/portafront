@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSumbit) = "onCreate()" novalidate #datos ="ngForm" >
+               
+                <div >
+                    <label for="perfil">Ingrese idioma</label>
+                    <input type="text" class="form-control" id="idioma" name="idioma" [(ngModel)]="idioma">
+                </div>
+               <!----> 
+               <input type="submit" value="confirmar" (click)="onCreate()">
+               
+            </form>
+
+        </div>
+    </div>
+</div>

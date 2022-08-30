@@ -1,0 +1,35 @@
+.header{
+    display: flexbox;
+    background-color: rgba(0, 132, 255, 0.24);
+}
+
+.logo{
+    display: inline-flex;
+    
+}
+
+.btn {
+    justify-content: right;
+    background: #71c171;
+    display: inline-flex;
+    border: none;
+    border-radius: 5px;   
+    float:right;
+    }
+.imglogo{
+       width: auto;
+       height: 100px;
+       padding: 25px;
+       justify-content: left;
+       vertical-align: text-top;  
+    }
+    
+
+.img{
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    justify-content: left;
+    vertical-align: text-top;  
+}
+

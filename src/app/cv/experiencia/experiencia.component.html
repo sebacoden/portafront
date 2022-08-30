@@ -1,0 +1,30 @@
+<div class="title">
+        Experiencia
+    <button
+        type="butoon"
+        routerLink='/nuevaexp'
+    >Nueva</button>
+
+    <!---    
+    <button    
+        (click)="showData()"     
+        >NUEVO</button>
+      
+    <div *ngIf="mostrar == true">
+        <app-new-experiencia></app-new-experiencia>
+    </div>
+     --->
+   
+</div>
+
+<ul *ngFor="let experiencia of exps" style="list-style-type: none">
+    
+   
+    <li>
+        {{experiencia.experiencia}}
+       
+        <button class="btn" (click)="onDeleteExp(experiencia.id)" >X</button>
+        <button class="" routerLink="/editexp/{{experiencia.id}}" >Editar</button>
+    
+    </li>
+</ul>

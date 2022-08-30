@@ -1,0 +1,17 @@
+<div class="title">Formacion
+    <button
+    type="butoon"
+    routerLink='/nuevafor'
+    >Nueva</button>
+</div>
+
+    
+    <ul style="list-style-type: none" *ngFor = "let formacion of formaciones">
+        <li>
+            {{formacion.datos}}
+            <button class="btn" (click)="onDeleteFor(formacion.id)" >X</button>
+            <button class="" routerLink="/editfor/{{formacion.id}}" >Editar</button>        
+        </li>
+    
+    </ul>
+

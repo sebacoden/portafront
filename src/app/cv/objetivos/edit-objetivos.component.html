@@ -1,0 +1,17 @@
+<div class="container" >
+    <div class="row">
+        <div>
+            <form (ngSumbit) = "onUpdate()" novalidate #datos ="ngForm" >
+               
+                <div >
+                    <label for="idioma">Edite Objetivos</label>
+                    <input type="text" class="form-control" id="objetivos" name="objetivos" [(ngModel)]="objetivos">
+                </div>
+               <!----> 
+               <input type="submit" value="confirmar" (click)="onUpdate()">
+               
+            </form>
+
+        </div>
+    </div>
+</div>
